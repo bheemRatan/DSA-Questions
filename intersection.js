@@ -18,3 +18,11 @@ function intersectionArr(arr1,arr2){
       return result;
 }
 console.log(intersectionArr(arr1,arr2));
+
+
+//second way to achieve it
+
+function IntersectionArr2(arr1,arr2){
+    return [...new Set(arr1.filter(num=>arr2.includes(num)))]
+}
+console.log(IntersectionArr2(arr1,arr2));
